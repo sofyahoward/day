@@ -1,0 +1,402 @@
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Fira Mono', monospace;
+    padding: 0;
+    background: black;
+}
+/* MATERIAL DESIGN ICONS SIZING *************************************************/
+.material-icons.md-16 { font-size: 16px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* DIV THAT CONTAINS THE RANDOMLY GENERATED BACKGROUND IMAGE ************************/
+/* #container {
+   width:100%;
+   height:100%;
+   background:url("https://source.unsplash.com/random?nature") no-repeat center center fixed;
+   background-size: cover;
+   background-repeat:no-repeat;
+   background-position:center center;
+   position: fixed;
+} */
+/* THE WEATHER DIV BEFORE CLICKING *************************************************/
+#weather {
+    padding: 1%;
+    position: fixed;
+    left: 92%;
+    top: 6%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: rgba(1, 11, 28, 0.65);
+    color: white;
+    border-radius: 5px;
+    height: fit-content;
+    margin-top: 3.5%;
+}
+/* .full-modal, .modal-footer {
+    background-color: rgba(1, 11, 28, 0.65);
+    color: white;
+} */
+.full-modal > .modal-content {
+    display: flex;
+}
+#weatherIcon {
+    width: 60%;
+}
+canvas {
+    display: flex;
+    align-items: center;
+}
+#icon2 {
+    /* the color of the icons is in the js file on line 151 */
+    /* color: #f4511e !important; */
+    display: flex !important;
+    padding-left: 10%;
+    align-items: center !important;
+    justify-content: center;
+    height: 75px;
+}
+#icon {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 25%;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#weatherModal {
+    position: absolute;
+    margin-right: 7%;
+    width: 25%;
+    width: 400px;
+}
+#language {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba(1, 11, 28, 0.65);
+    color: white;
+    border-radius: 5px;
+}
+/* THE CLOCK CONTAINER *************************************************/
+#time {
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5rem;
+    color: white;
+    background-color: rgba(1, 11, 28, 0.65);
+    border-radius: 5px;
+    padding: 0 1.25rem 0 1.25rem;
+}
+#quote {
+    color: white;
+    position: fixed;
+    top: 87%;
+    left: 50%;
+    padding-right: 1rem;
+    transform: translate(-50%, -50%);
+    background-color: rgba(1, 11, 28, 0.65);
+    height: fit-content;
+    text-align: left;
+    border-radius: 5px;
+}
+blockquote {
+    border-left: rgba(245, 245, 245, 0.7) !important;
+}
+#author {
+    text-align: right;
+    padding-right: 3%;
+    height: fit-content;
+    font-size: 2vh;
+}
+/* GOOGLE SEARCH *************************************************/
+/* this is not working either :( */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    content: 'Search Google';
+}
+::-moz-placeholder { /* Firefox 19+ */
+    content: 'Search Google';
+}
+:-ms-input-placeholder { /* IE 10+ */
+    content: 'Search Google';
+}
+:-moz-placeholder { /* Firefox 18- */
+    content: 'Search Google';
+}
+div .gsc-control-cse {
+    width: 30%;
+    background: transparent;
+    border: none;
+}
+table .gsc-search-box {
+    border: none;
+}
+td .gsc-input {
+    background: transparent !important;
+}
+.gsc-search-button-v2, .gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+    background-color: transparent !important;
+    border: none !important;
+    font-size: 15px;
+    width: 15px;
+}
+div #gsc-iw-id1 {
+    background: rgba(1, 11, 28, 0.65) !important;
+    border-bottom: 5px white !important;
+}
+div #gsc-iw-id1 .gsc-input-box {
+    border:none;
+}
+table #gs50_id50.gstl_50 {
+    border-bottom: 5px white !important;
+}
+table .gsc-search-box{
+    border: none !important;
+}
+div .gsc-control-wrapper-cse > table .gsc-search-box {
+    border-collapse: none !important;
+}
+/* this wasn't doing anything
+ table {
+    border-collapse:  !important;
+} */
+.cse input.gsc-input {
+    background-image:none !important;
+}
+input #gsc-i-id1 .gsc-input {
+    background-image:none !important;
+}
+.gsc-input-box {
+    border: none !important;
+}
+input.gsc-input {
+    color: white !important;
+    background: none;
+    background-image:none !important;
+ }
+.gsst_a .gscb_a {
+    color: white !important;
+}
+.gsc-input {
+    text-indent: 5px;
+}
+/* TABS MODAL *********************************************************************/
+#myDayTrigger {
+    position: fixed;
+    left: 50%;
+    top: 67%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    /* background-color: #f4511e; */
+}
+/* EVENTS ***********************************************************************/
+#events a:hover {
+    text-decoration: underline;
+}
+.btn:not(#signUpBtn) {
+    background-color: #f4511e;
+}
+ .btn:hover:not(#signUpBtn), .btn-flat:hover {
+    background-color: #511ef4;
+    color: white;
+}
+#signUpBtn {
+    background-color: #511ef4;
+}
+#signUpBtn:hover {
+    background-color: #f4511e;
+}
+#myDayModal {
+    background-color: rgba(1, 11, 28, 0.65);
+}
+/* #theHapsFooter .material-icons, .eventsModalTitle {
+    color: white;
+} */
+#tabs-swipe-demo > li > a {
+    color: white;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active, .tabs {
+    background-color: rgba(81, 30, 244, 0.2);
+}
+/* #theHapsFooter {
+    background-color: transparent;
+} */
+.eventAddress {
+    color: #511ef4;
+}
+#eventLink {
+    color: #f4511e;
+}
+/* TODO LIST *****************************************************************************/
+.strike {
+    text-decoration: line-through;
+}
+/* LOGIN AND SIGN UP *********************************************************************/
+#containerSignIn {
+    width:100%;
+    height:100%;
+    background:url("https://source.unsplash.com/random?nature") no-repeat center center fixed;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    position: fixed;
+ }
+ #signUpOrLogin {
+    padding: 5px;
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    /* text-align: center; */
+    transform: translate(-50%, -50%);
+    /* background-color: rgb(1, 11, 28, 0.65); */
+    /* border-radius: 5px; */
+    /* height: fit-content; */
+    margin-top: 3%;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* width: 45%; */
+ }
+ #loginBtn {
+     margin-right: 2rem;
+ }
+ #signUpBackground, #logInBackground {
+    padding: 1%;
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: rgb(1, 11, 28, 0.65);
+    color: white;
+    border-radius: 5px;
+    height: fit-content;
+    margin-top: 3%;
+    width: 45%;
+    display: none;
+ }
+input {
+    color: white;
+}
+.deleteItemBtn{
+    position: fixed;
+    right: 15px;
+}
+#toDoListItem{
+    margin-bottom: 3%;
+}
+.loggedin-div {
+    width: 20%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 20px;
+    top: 10%;
+    position: fixed;
+    left: 35%;
+    display: none;
+}
+.main-div input {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    padding: 15px;
+    outline: none;
+    width: 94%;
+    margin-bottom: 20px;
+    color: white;
+}
+#userName_fieldSignUp {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    padding: 25px !important;
+    outline: none;
+    width: 97% !important;
+    margin-bottom: 20px;
+    color: black;
+}
+ #signup_div input {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    padding: 0px !important;
+    outline: none;
+    width: 97%;
+    margin-bottom: 20px;
+    color: black;
+    padding-right: 2% !important;
+}
+.error {
+    color: rgb(255,87,97);
+    height: 5%;
+}
+.main-div input:focus {
+border: 1px solid #999;
+}
+#todo-list{
+    color: white;
+}
+#logoutButton {
+    padding-top: 1%;
+    position: fixed;
+    left: 7%;
+    top: 85%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: rgba(1, 11, 28, 0.65);
+    color: white;
+    border-radius: 5px;
+    height: fit-content;
+    margin-top: 3.5%;
+}
+#logoutButton:hover {
+    background-color: rgb(0, 21, 29, 0.7);
+}
+#user_div {
+    width: 50%;
+    position: fixed;
+    margin-top: 18%;
+    margin-left: -15%;
+    margin-right: 10%;
+    /* transform: translate(-50%, -50%); */
+}
+#user_para {
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgba(1, 11, 28, 0.65);
+    border-radius: 5px;
+    padding: 0.25rem 1.25rem 0.25rem 1.25rem;
+}
+.welcomeHeader, .welcomeText{
+    font-size: 1.5rem;
+}
+/* MEDIA QUERIES ***********************************************************/
+@media screen and (max-width: 480px) {
+    #signUpOrLogin {
+        flex-direction: column;
+        padding-right: 4%;
+    }
+    #signUpBackground, #logInBackground {
+        width: 95%;
+        margin-top: 10%;
+    }
+}
